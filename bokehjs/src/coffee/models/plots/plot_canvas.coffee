@@ -715,6 +715,11 @@ export class PlotCanvas extends LayoutDOM
     @left_panel = new LayoutCanvas()
     @right_panel = new LayoutCanvas()
 
+    @above_panel.type = "AbovePanel"
+    @below_panel.type = "BelowPanel"
+    @left_panel.type = "LeftPanel"
+    @right_panel.type = "RightPanel"
+
     logger.debug("PlotCanvas initialized")
 
   _doc_attached: () ->
